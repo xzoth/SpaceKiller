@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace SpaceKiller
@@ -38,7 +37,7 @@ namespace SpaceKiller
             string strRegText = txtRegex.Text;
             string strReplaceText = txtReplaceString.Text;
 
-            if (string.IsNullOrWhiteSpace(strSourceFile))
+            if (string.IsNullOrEmpty(strSourceFile))
             {
                 MessageBox.Show("请先选择源文件", "提示", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
@@ -58,6 +57,11 @@ namespace SpaceKiller
                 string targetContent = Regex.Replace(fileContent, strRegText, strReplaceText);
 
                 File.WriteAllText(strSaveFilePath, targetContent, fileEncoding);
+
+                if (chkAutoOpen.Checked)
+                {
+                    Process.Start(strSaveFilePath);
+                }
             }
         }
     }

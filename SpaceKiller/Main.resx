@@ -112,16 +112,16 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="picLOGO.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAL8AAAAjCAYAAADFTts+AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAAAd0SU1FB9kHBg8PCOyxt0sAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJ
+        EQAACxEBf2RfkQAAAAd0SU1FB9kHBg8PCOyxt0sAAAAZdEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIEdJ
         TVBXgQ4XAAAcnElEQVR4Xu2bB3RUVbfHZybTMulAQCkW9PmBigWkKZ/wSVGKCoQSegkgIAIBIjUJpJJK
         CiigSBUkIEQQQZDe5EOKqJ+APmqAQELaJJOZzL13v/++MxMmMWAgeWu9td7stX5rn3vvqfv8z5lzJxOF
         y1zmMpe57P+jtX3ScDv23UbGhN4NjYm9GxkT+zQyxsEPb1PH6KZSpCKL2paz1iysRUP36zO71Tcu6t/4

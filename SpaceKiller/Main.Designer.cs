@@ -40,6 +40,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picLOGO = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.chkAutoOpen = new System.Windows.Forms.CheckBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLOGO)).BeginInit();
@@ -60,17 +61,17 @@
             // 
             this.txtRegex.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtRegex.Location = new System.Drawing.Point(90, 20);
+            this.txtRegex.Location = new System.Drawing.Point(90, 19);
             this.txtRegex.Name = "txtRegex";
             this.txtRegex.Size = new System.Drawing.Size(385, 21);
             this.txtRegex.TabIndex = 1;
-            this.txtRegex.Text = "(?<=\".*)\\s+(?=\")";
+            this.txtRegex.Text = "[\\t| ]+(?=\")";
             // 
             // txtSourceFile
             // 
             this.txtSourceFile.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtSourceFile.Location = new System.Drawing.Point(6, 22);
+            this.txtSourceFile.Location = new System.Drawing.Point(6, 18);
             this.txtSourceFile.Name = "txtSourceFile";
             this.txtSourceFile.ReadOnly = true;
             this.txtSourceFile.Size = new System.Drawing.Size(389, 21);
@@ -79,7 +80,7 @@
             // btnSelectSourceFile
             // 
             this.btnSelectSourceFile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSelectSourceFile.Location = new System.Drawing.Point(401, 20);
+            this.btnSelectSourceFile.Location = new System.Drawing.Point(401, 16);
             this.btnSelectSourceFile.Name = "btnSelectSourceFile";
             this.btnSelectSourceFile.Size = new System.Drawing.Size(75, 23);
             this.btnSelectSourceFile.TabIndex = 3;
@@ -95,7 +96,7 @@
             this.groupBox1.Controls.Add(this.btnSelectSourceFile);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(482, 61);
+            this.groupBox1.Size = new System.Drawing.Size(482, 49);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "源文件";
@@ -105,13 +106,14 @@
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox2.Controls.Add(this.chkAutoOpen);
             this.groupBox2.Controls.Add(this.txtReplaceString);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.txtRegex);
-            this.groupBox2.Location = new System.Drawing.Point(13, 80);
+            this.groupBox2.Location = new System.Drawing.Point(13, 67);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(481, 87);
+            this.groupBox2.Size = new System.Drawing.Size(481, 100);
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "设置";
@@ -120,7 +122,7 @@
             // 
             this.txtReplaceString.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtReplaceString.Location = new System.Drawing.Point(90, 52);
+            this.txtReplaceString.Location = new System.Drawing.Point(90, 47);
             this.txtReplaceString.Name = "txtReplaceString";
             this.txtReplaceString.Size = new System.Drawing.Size(385, 21);
             this.txtReplaceString.TabIndex = 4;
@@ -129,7 +131,7 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 55);
+            this.label2.Location = new System.Drawing.Point(19, 50);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 12);
             this.label2.TabIndex = 3;
@@ -139,7 +141,7 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 23);
+            this.label1.Location = new System.Drawing.Point(19, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(65, 12);
             this.label1.TabIndex = 2;
@@ -166,6 +168,18 @@
             this.label3.Size = new System.Drawing.Size(93, 14);
             this.label3.TabIndex = 8;
             this.label3.Text = "May May专用";
+            // 
+            // chkAutoOpen
+            // 
+            this.chkAutoOpen.AutoSize = true;
+            this.chkAutoOpen.Checked = true;
+            this.chkAutoOpen.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chkAutoOpen.Location = new System.Drawing.Point(90, 78);
+            this.chkAutoOpen.Name = "chkAutoOpen";
+            this.chkAutoOpen.Size = new System.Drawing.Size(132, 16);
+            this.chkAutoOpen.TabIndex = 5;
+            this.chkAutoOpen.Text = "完成后自动打开文件";
+            this.chkAutoOpen.UseVisualStyleBackColor = true;
             // 
             // Main
             // 
@@ -204,6 +218,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox picLOGO;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox chkAutoOpen;
     }
 }
 
